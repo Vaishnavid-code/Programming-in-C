@@ -1,0 +1,66 @@
+/*
+//Q52: Write a program to print the following pattern:
+
+*
+
+*
+*
+*
+
+*
+*
+*
+*
+*
+
+*
+*
+*
+
+*
+*/
+
+#include<stdio.h>
+int main()
+{
+int i,j,k,space;
+
+for (i=1;i<=1;i++)
+  {
+     printf("*");        
+  }   
+for(space=0;space<i;space++) 
+       {
+          printf("\n");
+       }   
+  for(j=1;j<=3;j++)
+  {
+     printf("*\n");    
+  }   
+for(space=0;space<i;space++) 
+       {
+          printf("\n");
+       }                
+for(k=1;k<=5;k++)
+  {
+     printf("*\n");    
+  }     
+for(space=0;space<i;space++) 
+       {
+          printf("\n");
+       }                          
+for(j=1;j<=3;j++)
+  {
+     printf("*\n");    
+  }    
+for(space=0;space<i;space++) 
+       {
+          printf("\n");
+       }     
+for (i=1;i<=1;i++)
+  {
+     printf("*");        
+  }          
+
+return 0;
+}
