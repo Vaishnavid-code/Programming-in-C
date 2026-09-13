@@ -1,0 +1,34 @@
+//Q69: Find the second largest element in an array.
+#include <stdio.h>
+int main()
+{
+int n,i,largest,secondLargest;
+
+printf("Enter n:");
+scanf("%d",&n);
+
+int arr[n];
+
+printf("Enter elements:");
+for(i=0;i<n;i++)
+   scanf("%d",&arr[i]);
+
+largest=arr[0];
+secondLargest=arr[0];
+
+for(i=1;i<n;i++)
+{
+   if(arr[i]>largest)
+   largest=arr[i];
+}
+
+for(i=0;i<n;i++)
+{
+    if(arr[i]>secondLargest && arr[i]<largest)
+    secondLargest=arr[i];
+}
+
+printf("%d",secondLargest);
+
+return 0;
+}
